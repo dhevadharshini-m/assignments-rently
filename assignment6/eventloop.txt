@@ -1,0 +1,31 @@
+Event Loop:
+Used to  handle asynchronous operations.
+It enables Node.js to perform non-blocking I/O operations despite being single-threaded.
+
+Phases:
+
+1.Timers Phase
+Executes callbacks scheduled by:
+setTimeout()
+setInterval()
+
+2.Pending Callbacks
+Executes I/O callbacks deferred to the next loop iteration.
+
+3.Idle, Prepare
+Used internally by Node.js.
+Not much for application-level control.
+
+4.Poll
+Waits for incoming I/O (e.g., file system, sockets).
+Executes callbacks for completed I/O events.
+
+5.Check
+Executes setImmediate() callbacks.
+
+6. Close Callbacks
+Executes close events like:
+socket.on('close', ...), process.on('exit', ...)
+
+promises,nextTick() are all micro tasks given high priority
+other all are macro tasks given low priority
