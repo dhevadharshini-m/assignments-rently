@@ -1,0 +1,48 @@
+1. Create a program for two files to communicate via event listeners and event emitters
+
+Log Monitoring System using EventEmitter
+
+Overview:
+A Node.js project that simulates a real-time log monitoring system using Event Emitters.
+
+**logger.js: Generates random log messages.
+
+**monitor.js: Listens for critical logs (ERROR, HIGH_CPU, DISK_FULL), writes them to alerts.log, and shows a summary every 5 alerts.
+
+**alerts.log – Stores critical logs.
+
+=>Logs are generated every 5 seconds.
+=>Critical logs are saved to alerts.log.
+=>Summary is shown every 5 critical alerts.
+
+-----------------------------------------------------------------------------------------------------
+2. Explain difference ways in which child process can be created and difference b/w them.
+
+Child Process Demonstration using Node.js
+
+Overview:
+This project explores the four different ways to create child processes in Node.js using the child_process module.
+
+Concepts Covered:
+    spawn – Best for large stream-based output.
+    exec – Buffers output, good for small results.
+    execFile – Runs files directly, avoids shell injection.
+    fork – Specialized for Node-to-Node communication with IPC.
+
+
+
+-----------------------------------------------------------------------------------------------------
+3. Create a function which executes linux command (eg: ifconfig) from nodejs and prints the result in console.
+
+Shell Command Execution via Node.js
+
+Overview:
+A Node.js program that runs a Linux shell command (like ifconfig) and displays the result in the console.
+
+Features:
+    Executes a shell script from Node.js
+    Uses execFile() for better performance and security
+    Output of the command is printed to the console
+
+
+
